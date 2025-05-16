@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0B0B"
+    tools:context=".Score">
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        android:background="#17FF0404"
+        android:backgroundTint="#BD2323"
+        android:fontFamily="@font/cherry_bomb_one"
+        android:text="Review Question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedBack"
+        app:rippleColor="#FF0000"
+        app:strokeColor="#68FD0000" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#56F40B0B"
+        android:fontFamily="@font/cherry_bomb_one"
+        android:text="Exit"
+        app:layout_constraintStart_toEndOf="@+id/reviewButton"
+        app:layout_constraintTop_toBottomOf="@+id/feedBack"
+        app:strokeColor="#28FFFFFF" />
+
+    <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="238dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/anton"
+        android:text="Total Score"
+        android:textColor="#F2BD0303"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedBack"
+        android:layout_width="377dp"
+        android:layout_height="374dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Feedback"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreDisplay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
